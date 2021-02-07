@@ -1,7 +1,7 @@
 const input = document.querySelector('input');
 const Message = document.querySelector('#warning');
 const patternMessage = "Color Pattern not ok !";
-const colorChecker = /#([0-9a-z]{1,2})([0-9a-z]{1,2})([0-9a-z]{1,2})/; //reguler expression (check color code in hex)
+const colorChecker = /#([0-9a-z]{1,2})([0-9a-z]{1,2})([0-9a-z]{1,2})/i; //reguler expression (check color code in hex)
 
 input.addEventListener('keyup', () => {
     let inputValue = input.value; // get user input value
