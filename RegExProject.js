@@ -21,9 +21,9 @@ input.addEventListener('keyup', () => {
             Message.innerHTML = patternMessage;
         }
         else {
-            const r = convertHexToDecimal(output[1]);
-            const g = convertHexToDecimal(output[2]);
-            const b = convertHexToDecimal(output[3]);
+            const r = convertHexToDecimal(output[1]); //for red
+            const g = convertHexToDecimal(output[2]); // for green
+            const b = convertHexToDecimal(output[3]); // for blue
 
             if (isNaN(r) || isNaN(g) || isNaN(b)) { // check inputed range is ok or not
                 Message.innerHTML = patternMessage;
